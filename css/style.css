@@ -1,0 +1,47 @@
+input,
+textarea {
+    box-sizing: border-box;
+}
+
+.column {
+    max-width: 330px;
+}
+
+h1,
+h2 {
+    letter-spacing: 0px;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.row {
+    min-height: 42px;
+    width: 330px;
+}
+
+.button {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: center;
+    background-color: #12d661;
+}
+
+label,
+textarea {
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+option {
+    font-size: 14px;
+    color: #1f222c;
+    font-weight: 400;
+    font-family: "Roboto";
+}
