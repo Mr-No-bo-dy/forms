@@ -1,28 +1,61 @@
+/* html {
+    font-size: 10px;
+} */
+
+body {
+    font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 990px;
+}
+
+h1 {
+    margin: 50px 0 0;
+    color: #1f222c;
+    font-weight: 700;
+    font-size: 30px;
+    font-family: "Roboto Slab";
+    text-align: center;
+}
+
+h2 {
+    margin: 0 0 30px;
+    letter-spacing: 0px;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Roboto";
+    text-transform: uppercase;
+}
+
+.form:not(:first-child) {
+    padding: 50px 0;
+    border-top: 1px solid #dcdcde;
+}
+
 input,
 textarea {
     box-sizing: border-box;
+}
+
+form p {
+    margin: 10px 0;
 }
 
 .column {
     max-width: 330px;
 }
 
-h1,
-h2 {
-    letter-spacing: 0px;
-    color: #b3b3b3;
-    font-weight: 700;
-    font-family: "Roboto";
-    font-size: 20px;
-    text-transform: uppercase;
-}
-
 .row {
-    min-height: 42px;
+    padding: 13px 15px;
     width: 330px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
-.button {
+[type="submit"] {
     font-size: 14px;
     color: #ffffff;
     font-weight: 700;
@@ -31,17 +64,78 @@ h2 {
     background-color: #12d661;
 }
 
-label,
+.form-1 label,
 textarea {
-    font-size: 14px;
+    max-height: 130px;
     color: #b3b3b3;
     font-weight: 400;
+    font-size: 14px;
     font-family: "Roboto";
 }
 
 option {
-    font-size: 14px;
+    padding: 13px 15px;
     color: #1f222c;
     font-weight: 400;
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+/* select:hover>option:first-child {
+    display: none;
+} */
+
+.flex {
+    display: flex;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    max-width: 680px;
+}
+
+.col-2 {
+    min-width: 165px;
+}
+
+.form-2 label,
+.form-3 label {
+    margin: 0 7px;
+}
+
+label {
+    color: #1f222c;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+select {
+    padding: 11px 15px;
+}
+
+fieldset p {
+    display: inline-block;
+    padding-left: 10px;
+    min-width: 70px;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+fieldset {
+    margin-left: 60px;
+    padding: 15px 15px 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+}
+
+.sex label {
+    color: #1f222c;
+    font-weight: 700;
+    font-size: 16px;
     font-family: "Roboto";
 }

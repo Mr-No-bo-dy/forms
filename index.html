@@ -1,27 +1,101 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Шаблони Форм</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1>01. проста форма</h1>
-    <div class="form1 column"><form action="" method="post">
-        <p><label for=""><input class="row" type="text">Введіть ім’я</label></p>
-        <p><label for=""><input class="row" type="text">Email</label></p>
-        <p>
-            <select class="row" name="" id="">
-                <option value="">Київ</option>
-                <option value="">Львів</option>
-                <option value="">Хмельницький</option>
-            </select>
-        </p>
-        <textarea class="row" name="" id="" cols="30" rows="10">Email</textarea>
-        <p><input class="row button" type="submit" value="Зареєструватися"></p>
-    </form>
+    <div class="wrapper">
+        <h1>Форми</h1>
+        <div class="form form-1 column">
+            <h2>01. проста форма</h1>
+                <form action="" method="post">
+                    <p><label><input placeholder="Введіть ім’я" class="row" type="text"></label></p>
+                    <p><label><input placeholder="Email" class="row" type="text"></label></p>
+                    <p>
+                        <select class="row" name="" id="">
+                            <option value="" hidden="">Ваше місто</option>
+                            <option value="">Київ</option>
+                            <option value="">Львів</option>
+                            <option value="">Хмельницький</option>
+                        </select>
+                    </p>
+                    <textarea class="row" name="" id="" cols="30" rows="10">Email</textarea>
+                    <p><input class="row" type="submit" value="Зареєструватися"></p>
+                </form>
+        </div>
+        <div class="form form-2">
+            <h2>02. елементи</h1>
+                <form action="" method="post">
+                    <div class="flex">
+                        <div class="col-2">
+                            <p><input id="deliv1" type="radio" name="delivery" checked>
+                                <label for="deliv1">Нова Пошта</label></p>
+                            <p><input id="deliv2" type="radio" name="delivery">
+                                <label for="deliv2">Кур’єр</label></p>
+                            <p><input id="deliv3" type="radio" name="delivery">
+                                <label for="deliv3">Самовивіз</label></p>
+                        </div>
+                        <div class="col-2">
+                            <p><input id="cond1" type="checkbox" name="" id="">
+                                <label for="cond1">Прочитав умови договору</label></p>
+                            <p><input id="cond2" type="checkbox" name="" id="">
+                                <label for="cond2">Згідний з ПДВ 9%</label></p>
+                            <p><input id="cond3" type="checkbox" name="" id="">
+                                <label for="cond3">Отримувати новини на ел. пошту</label></p>
+                        </div>
+                        <div class="col-2">
+                            <fieldset>
+                                <div>
+                                    <p><b>Статус</b></p>
+                                    <input id="sell1" type="checkbox" name="" id="">
+                                    <label for="sell1">Новинки</label>
+                                    <input id="sell2" type="checkbox" name="" id="">
+                                    <label for="sell2">Акційні товари</label>
+                                    <input id="sell3" type="checkbox" name="" id="">
+                                    <label for="sell3">Розпродаж</label>
+                                </div>
+                                <div>
+                                    <p><b>Дата</b></p>
+                                    <select name="" id="">
+                                        <option value="">2018-03-17</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+        </div>
+        <div class="form form-3">
+            <h2>03. стилізовані чекбокси </h2>
+            <div class="flex-between">
+                <div class="sex">
+                    <p><input id="male" type="radio" name="sex">
+                        <img id="male" src="img/male.png" alt="male">
+                        <label for="male">Чоловік</label></p>
+                    <p><input id="female" type="radio" name="sex">
+                        <label for="female">Жінка</label></p>
+                </div>
+                <div class="tasks">
+                    <p><input id="news" type="checkbox">
+                        <label for="news">Отримувати новини</label></p>
+                    <p><input id="buy" type="checkbox">
+                        <label for="buy">Купити додому ковбаси</label></p>
+                    <p><input id="light" type="checkbox">
+                        <label for="light">Включити світло</label></p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
