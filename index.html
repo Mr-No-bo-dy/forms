@@ -23,10 +23,10 @@
                     <p><label><input placeholder="Email" class="row" type="text"></label></p>
                     <p>
                         <select class="row" name="" id="">
-                            <option value="" hidden="">Ваше місто</option>
-                            <option value="">Київ</option>
-                            <option value="">Львів</option>
-                            <option value="">Хмельницький</option>
+                            <option value="none" hidden="">Ваше місто</option>
+                            <option value="Київ">Київ</option>
+                            <option value="Львів">Львів</option>
+                            <option value="Хмельницький">Хмельницький</option>
                         </select>
                     </p>
                     <textarea class="row" name="" id="" cols="30" rows="10">Email</textarea>
@@ -42,7 +42,7 @@
                                 <label for="deliv1">Нова Пошта</label></p>
                             <p><input id="deliv2" type="radio" name="delivery">
                                 <label for="deliv2">Кур’єр</label></p>
-                            <p><input id="deliv3" type="radio" name="delivery">
+                            <p><input id="deliv3" type="radio" name="delivery" disabled>
                                 <label for="deliv3">Самовивіз</label></p>
                         </div>
                         <div class="col-2">
@@ -50,7 +50,7 @@
                                 <label for="cond1">Прочитав умови договору</label></p>
                             <p><input id="cond2" type="checkbox" name="" id="">
                                 <label for="cond2">Згідний з ПДВ 9%</label></p>
-                            <p><input id="cond3" type="checkbox" name="" id="">
+                            <p><input id="cond3" type="checkbox" name="" id="" disabled>
                                 <label for="cond3">Отримувати новини на ел. пошту</label></p>
                         </div>
                         <div class="col-2">
