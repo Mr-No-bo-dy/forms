@@ -22,17 +22,17 @@
                     <p><label><input class="row" type="text" name="Name" placeholder="Введіть ім’я"></label></p>
                     <p><label><input class="row" type="text" name="Email" placeholder="Email"></label></p>
                     <p>
-                        <select class="row" name="town">
-                            <!-- <option value="none" selected hidden>Ваше місто</option> -->
-                            <option value="none" selected disabled>Ваше місто</option>
-                            <option value="Київ">Київ</option>
-                            <option value="Львів">Львів</option>
-                            <option value="Вінниця">Вінниця</option>
-                            <option value="Хмельницький">Хмельницький</option>
-                            <option value="Тернопіль">Тернопіль</option>
-                        </select>
+                        <label class="select" for="select">
+                            <select id="select" class="row" name="town">
+                                <!-- <option value="none" selected hidden>Ваше місто</option> -->
+                                <option value="none" selected disabled>Ваше місто</option>
+                                <option value="Київ">Київ</option>
+                                <option value="Львів">Львів</option>
+                                <option value="Хмельницький">Хмельницький</option>
+                            </select>
+                        </label>
                     </p>
-                    <textarea class="row" name="Email" rows="6" maxlength="30" placeholder="Email"></textarea>
+                    <div><textarea class="row" name="Email" rows="6" maxlength="30" placeholder="Email"></textarea></div>
                     <p><input class="row" name="Register" type="submit" value="Зареєструватися"></p>
                 </form>
         </div>
@@ -70,9 +70,7 @@
                                 </div>
                                 <div>
                                     <p><b>Дата</b></p>
-                                    <select name="date">
-                                        <option value="2018-03-17">2018-03-17</option>
-                                    </select>
+                                    <input type="date" value="2018-03-17">
                                 </div>
                             </fieldset>
                         </div>

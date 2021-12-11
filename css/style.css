@@ -54,9 +54,14 @@ hr {
     max-width: 680px;
 }
 
+.form-1 p,
+.form-1 div {
+    max-width: 330px;
+}
+
 .row {
     padding: 13px 15px;
-    width: 330px;
+    width: 100%;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
@@ -71,15 +76,29 @@ form p {
 }
 
 input,
+select,
 textarea {
     outline: none;
     box-sizing: border-box;
 }
 
-input:focus,
-textarea:focus {
-    background-color: #eaeaea;
-    border: 1px solid #1f222c;
+[type="text"]:focus,
+textarea:focus,
+select:focus,
+[type="text"]:hover,
+textarea:hover,
+select:hover {
+    background-color: #fff;
+    border: 1px solid #3e6aff;
+    border-radius: 3px;
+    box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
+}
+
+textarea {
+    vertical-align: bottom;
+    resize: vertical;
+    min-height: 130px;
+    max-height: 400px;
 }
 
 [type="submit"] {
@@ -94,11 +113,6 @@ textarea:focus {
 
 .form-1 label,
 textarea {
-    min-height: 130px;
-    max-height: 400px;
-    /* min-width: 165px;
-    max-width: 500px; */
-    /* color: #b3b3b3; */
     color: #1f222c;
     font-weight: 400;
     font-size: 14px;
@@ -106,7 +120,12 @@ textarea {
 }
 
 input {
-    margin-inline: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+::placeholder {
+    color: #b3b3b3;
 }
 
 [type="checkbox"],
@@ -115,9 +134,18 @@ input {
     height: 16px;
 }
 
+[type="checkbox"]:focus {
+    background-color: #fff;
+}
+
 .form-2 label,
 .form-3 label {
-    margin: 15px 10px 15px;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+input:disabled~label {
+    color: #b3b3b3;
 }
 
 label {
@@ -128,22 +156,23 @@ label {
 }
 
 select {
-    position: relative;
     padding: 11px 15px;
     appearance: none;
     -webkit-appearance: none;
 }
 
-select:after {
+/* label.select {
+    position: relative;
+}
+
+label.select:after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 5px;
-    height: 5px;
-    background-color: #1f222c;
-    border: 5px solid #1f222c;
-}
+    top: 3px;
+    right: 15px;
+    border: 6px solid #1f222c;
+    transform: rotate(45deg);
+} */
 
 option {
     padding: 13px 15px;
@@ -153,9 +182,9 @@ option {
     font-family: "Roboto";
 }
 
-/* option:hover {
+option:hover {
     background-color: #b3b3b3;
-} */
+}
 
 /* select:hover>option:first-child {
     display: none;
