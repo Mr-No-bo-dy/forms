@@ -19,55 +19,59 @@
         <div class="form form-1 column">
             <h2>01. проста форма</h1>
                 <form action="" method="post">
-                    <p><label><input placeholder="Введіть ім’я" class="row" type="text"></label></p>
-                    <p><label><input placeholder="Email" class="row" type="text"></label></p>
+                    <p><label><input class="row" type="text" name="Name" placeholder="Введіть ім’я"></label></p>
+                    <p><label><input class="row" type="text" name="Email" placeholder="Email"></label></p>
                     <p>
-                        <select class="row" name="" id="">
-                            <option value="none" hidden="">Ваше місто</option>
+                        <select class="row" name="town">
+                            <!-- <option value="none" selected hidden>Ваше місто</option> -->
+                            <option value="none" selected disabled>Ваше місто</option>
                             <option value="Київ">Київ</option>
                             <option value="Львів">Львів</option>
+                            <option value="Вінниця">Вінниця</option>
                             <option value="Хмельницький">Хмельницький</option>
+                            <option value="Тернопіль">Тернопіль</option>
                         </select>
                     </p>
-                    <textarea class="row" name="" id="" cols="30" rows="10">Email</textarea>
-                    <p><input class="row" type="submit" value="Зареєструватися"></p>
+                    <textarea class="row" name="Email" rows="6" maxlength="30" placeholder="Email"></textarea>
+                    <p><input class="row" name="Register" type="submit" value="Зареєструватися"></p>
                 </form>
         </div>
+        <hr>
         <div class="form form-2">
             <h2>02. елементи</h1>
                 <form action="" method="post">
                     <div class="flex">
                         <div class="col-2">
-                            <p><input id="deliv1" type="radio" name="delivery" checked>
+                            <p><input id="deliv1" type="radio" name="delivery" value="Нова Пошта" checked>
                                 <label for="deliv1">Нова Пошта</label></p>
-                            <p><input id="deliv2" type="radio" name="delivery">
+                            <p><input id="deliv2" type="radio" name="delivery" value="Кур’єр">
                                 <label for="deliv2">Кур’єр</label></p>
-                            <p><input id="deliv3" type="radio" name="delivery" disabled>
+                            <p><input id="deliv3" type="radio" name="delivery" value="Самовивіз" disabled>
                                 <label for="deliv3">Самовивіз</label></p>
                         </div>
                         <div class="col-2">
-                            <p><input id="cond1" type="checkbox" name="" id="">
+                            <p><input id="cond1" type="checkbox" name="conditions" value="agree">
                                 <label for="cond1">Прочитав умови договору</label></p>
-                            <p><input id="cond2" type="checkbox" name="" id="">
+                            <p><input id="cond2" type="checkbox" name="tax" value="agree">
                                 <label for="cond2">Згідний з ПДВ 9%</label></p>
-                            <p><input id="cond3" type="checkbox" name="" id="" disabled>
+                            <p><input id="cond3" type="checkbox" name="get-news" value="agree" disabled>
                                 <label for="cond3">Отримувати новини на ел. пошту</label></p>
                         </div>
                         <div class="col-2">
                             <fieldset>
                                 <div>
                                     <p><b>Статус</b></p>
-                                    <input id="sell1" type="checkbox" name="" id="">
+                                    <input id="sell1" type="checkbox" name="new" value="agree">
                                     <label for="sell1">Новинки</label>
-                                    <input id="sell2" type="checkbox" name="" id="">
+                                    <input id="sell2" type="checkbox" name="special" value="agree">
                                     <label for="sell2">Акційні товари</label>
-                                    <input id="sell3" type="checkbox" name="" id="">
+                                    <input id="sell3" type="checkbox" name="sellout" value="agree">
                                     <label for="sell3">Розпродаж</label>
                                 </div>
                                 <div>
                                     <p><b>Дата</b></p>
-                                    <select name="" id="">
-                                        <option value="">2018-03-17</option>
+                                    <select name="date">
+                                        <option value="2018-03-17">2018-03-17</option>
                                     </select>
                                 </div>
                             </fieldset>
@@ -75,14 +79,14 @@
                     </div>
                 </form>
         </div>
+        <hr>
         <div class="form form-3">
             <h2>03. стилізовані чекбокси </h2>
             <div class="flex-between">
                 <div class="sex">
-                    <p><input id="male" type="radio" name="sex">
-                        <img id="male" src="img/male.png" alt="male">
+                    <p><input id="male" type="radio" name="sex" value="male">
                         <label for="male">Чоловік</label></p>
-                    <p><input id="female" type="radio" name="sex">
+                    <p><input id="female" type="radio" name="sex" value="female">
                         <label for="female">Жінка</label></p>
                 </div>
                 <div class="tasks">

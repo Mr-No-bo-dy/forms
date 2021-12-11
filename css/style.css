@@ -30,22 +30,28 @@ h2 {
     text-transform: uppercase;
 }
 
-.form:not(:first-child) {
+.form {
     padding: 50px 0;
-    border-top: 1px solid #dcdcde;
 }
 
-input,
-textarea {
-    box-sizing: border-box;
-}
-
-form p {
-    margin: 10px 0;
+hr {
+    height: 1px;
+    border: none;
+    background-color: #dcdcde;
 }
 
 .column {
     max-width: 330px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    max-width: 680px;
 }
 
 .row {
@@ -53,6 +59,27 @@ form p {
     width: 330px;
     border: 1px solid #ccc;
     border-radius: 3px;
+}
+
+select {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form p {
+    margin: 10px 0;
+}
+
+input,
+textarea {
+    outline: none;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #eaeaea;
+    border: 1px solid #1f222c;
 }
 
 [type="submit"] {
@@ -67,42 +94,30 @@ form p {
 
 .form-1 label,
 textarea {
-    max-height: 130px;
-    color: #b3b3b3;
-    font-weight: 400;
-    font-size: 14px;
-    font-family: "Roboto";
-}
-
-option {
-    padding: 13px 15px;
+    min-height: 130px;
+    max-height: 400px;
+    /* min-width: 165px;
+    max-width: 500px; */
+    /* color: #b3b3b3; */
     color: #1f222c;
     font-weight: 400;
     font-size: 14px;
     font-family: "Roboto";
 }
 
-/* select:hover>option:first-child {
-    display: none;
-} */
-
-.flex {
-    display: flex;
+input {
+    margin-inline: 0;
 }
 
-.flex-between {
-    display: flex;
-    justify-content: space-between;
-    max-width: 680px;
-}
-
-.col-2 {
-    min-width: 165px;
+[type="checkbox"],
+[type="radio"] {
+    width: 16px;
+    height: 16px;
 }
 
 .form-2 label,
 .form-3 label {
-    margin: 0 7px;
+    margin: 15px 10px 15px;
 }
 
 label {
@@ -113,9 +128,41 @@ label {
 }
 
 select {
+    position: relative;
     padding: 11px 15px;
     appearance: none;
     -webkit-appearance: none;
+}
+
+select:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    background-color: #1f222c;
+    border: 5px solid #1f222c;
+}
+
+option {
+    padding: 13px 15px;
+    color: #1f222c;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+/* option:hover {
+    background-color: #b3b3b3;
+} */
+
+/* select:hover>option:first-child {
+    display: none;
+} */
+
+.col-2 {
+    min-width: 165px;
 }
 
 fieldset p {
