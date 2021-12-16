@@ -174,7 +174,7 @@ fieldset p {
 }
 
 h3 {
-    margin: 25px 0;
+    margin: 25px 0 15px;
     color: #1f222c;
     font-size: 18px;
     font-weight: 700;
@@ -224,8 +224,9 @@ h3 {
     background: url(../img/efemale-on.png) no-repeat;
 }
 
+.sex-ico+label:hover,
 .sex-ico:checked+label,
-.sex-ico+label:hover {
+.task-ico:checked+label {
     color: #3e6aff;
 }
 
@@ -286,7 +287,7 @@ table {
     padding: 7px 0;
 }
 
-.form-4 .sex-2 {
+.row-2 {
     max-width: 170px;
 }
 
@@ -297,7 +298,6 @@ table {
 .file {
     display: block;
     box-sizing: border-box;
-    max-width: 170px;
     padding: 13px;
     color: #fff;
     font-weight: 700;
@@ -331,25 +331,26 @@ table {
 }
 
 .form-5 table {
-    margin: 0 0 0 -10px;
+    margin: 0 -5px;
 }
 
 .form-5 table td {
-    padding: 10px 0 10px 10px ;
+    padding: 8px 5px;
 }
 
 .form-5 .flex-between p {
+    margin-right: 10px;
     width: 181px;
 }
 
 .form-5 hr {
-    margin: 25px 5px 20px;
+    margin: 25px 10px 20px 0;
 }
 
 .form-5 table label,
 .form-6 label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #b3b3b3;
     font-size: 13px;
 }
@@ -392,7 +393,7 @@ table {
     border-radius: 3px;
 }
 
-.row-2 {
+.row-3 {
     padding: 9px 15px;
     min-width: 260px;
 }
