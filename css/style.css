@@ -49,6 +49,7 @@ hr {
 .flex-between {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .form-1 p,
@@ -145,19 +146,6 @@ input:disabled~label {
     color: #b3b3b3;
 }
 
-/* label.select {
-    position: relative;
-}
-
-label.select:after {
-    content: "";
-    position: absolute;
-    top: 3px;
-    right: 15px;
-    border: 6px solid #1f222c;
-    transform: rotate(45deg);
-} */
-
 fieldset {
     padding: 15px 15px 20px;
     background-color: #f7f7f7;
@@ -193,7 +181,7 @@ h3 {
     font-family: "Roboto";
 }
 
-/* .task-ico, */
+.task-ico,
 .sex-ico {
     position: absolute;
     appearance: none;
@@ -260,7 +248,9 @@ h3 {
     padding: 30px 80px;
 }
 
-.sex-ico+label:before {
+.sex-ico+label:before,
+.task-ico+label:before,
+.task-ico+label:after {
     content: "";
     position: absolute;
 }
@@ -292,6 +282,37 @@ h3 {
 .sex-ico:checked+label,
 .sex-ico+label:hover {
     color: #3e6aff;
+}
+
+.task-ico+label {
+    position: relative;
+    padding: 5px 60px;
+}
+
+.task-ico+label:before {
+    width: 45px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background-color: #cfcfd1;
+    border-radius: 12px;
+}
+
+.task-ico+label:after {
+    width: 21px;
+    height: 21px;
+    top: 2px;
+    left: 2px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.task-ico:checked+label:before {
+    background-color: #3e6aff;
+}
+
+.task-ico:checked+label:after {
+    left: 22px;
 }
 
 .form-4 {
@@ -328,7 +349,7 @@ table {
     display: none;
 }
 
-[for="file-1"] {
+.file {
     display: block;
     box-sizing: border-box;
     max-width: 170px;
@@ -342,7 +363,7 @@ table {
     border-radius: 3px;
 }
 
-[for="file-1"]:hover {
+.file:hover {
     box-shadow: 0px 2px 2.5px rgba(15, 40, 126, 0.35);
     background-color: #2857f4;
 }
