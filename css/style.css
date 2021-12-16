@@ -190,7 +190,7 @@ h3 {
 
 .sex-ico+label {
     position: relative;
-    padding: 30px 80px;
+    padding: 30px 15px 30px 85px;
 }
 
 .sex-ico+label:before,
@@ -202,7 +202,7 @@ h3 {
 
 .sex-ico+label:before {
     top: 3px;
-    left: -11px;
+    left: -6px;
     width: 70px;
     height: 70px;
     border: 2px solid #fff;
@@ -232,13 +232,13 @@ h3 {
 
 .task-ico+label {
     position: relative;
-    padding: 5px 60px;
+    padding: 10px 15px 10px 60px;
 }
 
 .task-ico+label:before {
     width: 45px;
     height: 25px;
-    top: 0;
+    top: 6px;
     left: 0;
     background-color: #cfcfd1;
     border-radius: 12px;
@@ -247,7 +247,7 @@ h3 {
 .task-ico+label:after {
     width: 21px;
     height: 21px;
-    top: 2px;
+    top: 8px;
     left: 2px;
     background-color: #fff;
     border-radius: 50%;
@@ -291,7 +291,7 @@ table {
     max-width: 170px;
 }
 
-#file-1 {
+#file1 {
     display: none;
 }
 
