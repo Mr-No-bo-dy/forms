@@ -78,9 +78,9 @@
             <h2>03. стилізовані чекбокси</h2>
             <div class="flex-between">
                 <div class="sex">
-                    <input class="sex-ico sex-male" id="male" type="radio" name="sex" value="male">
+                    <input id="male" class="sex-ico sex-male" type="radio" name="sex" value="male">
                     <label for="male">Чоловік</label>
-                    <input class="sex-ico sex-female" id="female" type="radio" name="sex" value="female">
+                    <input id="female" class="sex-ico sex-female" type="radio" name="sex" value="female">
                     <label for="female">Жінка</label>
                 </div>
                 <div class="tasks">
@@ -137,7 +137,7 @@
                     </tr>
                     <tr>
                         <td><label for="file1">Фото:</label></td>
-                        <td><label class="row-2 file" for="file-1">Виберіть файл</label>
+                        <td><label for="file1" class="row-2 file">Виберіть файл</label>
                             <input id="file1" type="file" name="choose-file"></td>
                     </tr>
                     <tr>
@@ -209,8 +209,8 @@
                     </tr>
                 </tbody>
             </table>
-            <p><input id="cond2-1" type="checkbox" name="condition" value="agree">
-                <label for="cond2-1">Я погоджуюсь з правилами оплати та доставки товару</label></p>
+            <p><input id="f5cond" type="checkbox" name="condition" value="agree">
+                <label for="f5cond">Я погоджуюсь з правилами оплати та доставки товару</label></p>
             <hr>
             <div class="flex-between">
                 <p><input class="row" name="Buy" type="reset" value="Повернутися назад"></p>
@@ -222,15 +222,15 @@
             <form class="form-6" action="" method="post">
                 <p>
                     <label for="login">Логін</label>
-                    <input class="row row-3 enter" id="login" type="text" name="login">
+                    <input id="login" class="row row-3 enter" type="text" name="login">
                 </p>
                 <p>
                     <label for="password">Пароль</label>
-                    <input class="row row-3 enter" id="password" type="password" name="password">
+                    <input id="password" class="row row-3 enter" type="password" name="password">
                 </p>
                 <p><a href="#">Забули пароль?</a></p>
-                <p><input id="remember" type="checkbox" name="remember"><label class="remember" for="remember">Запам’ятати
-                        пароль</label></p>
+                <p><input id="remember" type="checkbox" name="remember">
+                    <label for="remember" class="remember">Запам’ятати пароль</label></p>
                 <input class="row row-3" name="enter" type="submit" value="Увійти">
             </form>
         </div>
