@@ -19,11 +19,11 @@
         <div class="form form-1 column">
             <h2>01. проста форма</h2>
             <form action="" method="post">
-                <p><label><input class="row" type="text" name="name" placeholder="Введіть ім’я"></label></p>
-                <p><label><input class="row" type="text" name="email" placeholder="Email"></label></p>
+                <p><label><input class="row enter" type="text" name="name" placeholder="Введіть ім’я"></label></p>
+                <p><label><input class="row enter" type="email" name="email" placeholder="Email"></label></p>
                 <p>
                     <label for="select" class="select">
-                        <select id="select" class="row" name="town">
+                        <select id="select" class="row enter" name="town">
                             <option value="none" selected disabled>Ваше місто</option>
                             <option value="Київ">Київ</option>
                             <option value="Львів">Львів</option>
@@ -31,7 +31,8 @@
                         </select>
                     </label>
                 </p>
-                <div><textarea class="row" name="email" rows="6" maxlength="30" placeholder="Email"></textarea>
+                <div><textarea class="row enter" name="email" rows="6" maxlength="30"
+                        placeholder="Коментарій"></textarea>
                 </div>
                 <p><input class="row" name="register" type="submit" value="Зареєструватися"></p>
             </form>
@@ -82,17 +83,17 @@
             <h2>03. стилізовані чекбокси</h2>
             <form class="flex-between" action="" method="post">
                 <div class="sex">
-                    <p><input class="sex-img sex-male" id="male" type="radio" name="sex" value="male">
-                        <label for="male">Чоловік</label></p>
-                    <p><input class="sex-img sex-female" id="female" type="radio" name="sex" value="female">
-                        <label for="female">Жінка</label></p>
+                    <div></p><input class="sex-ico sex-male" id="male" type="radio" name="sex" value="male">
+                        <label for="male">Чоловік</label></div>
+                    <div></p><input class="sex-ico sex-female" id="female" type="radio" name="sex" value="female">
+                        <label for="female">Жінка</label></div>
                 </div>
                 <div class="tasks">
-                    <p><input class="task-img" id="news" type="checkbox">
+                    <p><input class="task-ico" id="news" type="checkbox">
                         <label for="news">Отримувати новини</label></p>
-                    <p><input class="task-img" id="buy" type="checkbox">
+                    <p><input class="task-ico" id="buy" type="checkbox">
                         <label for="buy">Купити додому ковбаси</label></p>
-                    <p><input class="task-img" id="light" type="checkbox">
+                    <p><input class="task-ico" id="light" type="checkbox">
                         <label for="light">Включити світло</label></p>
                 </div>
             </form>
@@ -105,34 +106,38 @@
                 <table>
                     <tbody>
                         <tr>
-                            <td class="column2-1">ФІО:</td>
-                            <td class="column2-2"><label><input class="row" type="text" name="name"
-                                        placeholder="Введіть ім’я"></label></td>
+                            <td class="column2-1"><label for="f4name">ФІО:</label></td>
+                            <td class="column2-2"><input id="f4name" class="row enter" type="text" name="name"
+                                    placeholder="Введіть ім’я">
+                            </td>
                         </tr>
                         <tr>
-                            <td>Пароль:</td>
-                            <td><input class="row" type="text" name="password"
+                            <td><label for="f4pass">Пароль:</label></td>
+                            <td><input id="f4pass" class="row enter" type="password" name="password"
                                     placeholder="Введіть не менше 6 символів">
                             </td>
                         </tr>
                         <tr>
-                            <td>Місто:</td>
-                            <td><label for="select2" class="select">
-                                    <select id="select2" class="row" name="town">
-                                        <option value="Хмельницький">Хмельницький</option>
-                                        <option value="Львів">Львів</option>
-                                        <option value="Київ">Київ</option>
-                                    </select>
-                                </label></td>
+                            <td><label for="select2" class="select">Місто:</label></td>
+                            <td><select id="select2" class="row enter" name="town">
+                                    <option value="Хмельницький">Хмельницький</option>
+                                    <option value="Львів">Львів</option>
+                                    <option value="Київ">Київ</option>
+                                </select>
+                            </td>
                         </tr>
                         <tr>
                             <td>Стать:</td>
                             <td>
                                 <div class="sex-2 flex-between">
-                                    <input id="male2" type="radio" name="sex" value="male">
-                                    <label for="male2">Чоловік</label>
-                                    <input id="female2" type="radio" name="sex" value="female">
-                                    <label for="female2">Жінка</label>
+                                    <p>
+                                        <input id="male2" type="radio" name="sex" value="male">
+                                        <label for="male2">Чоловік</label>
+                                    </p>
+                                    <p>
+                                        <input id="female2" type="radio" name="sex" value="female">
+                                        <label for="female2">Жінка</label>
+                                    </p>
                                 </div>
                             </td>
                         </tr>
@@ -142,9 +147,9 @@
                                 <input id="file-1" type="file" name="choose-file"></td>
                         </tr>
                         <tr>
-                            <td class="ais">Коментарій:</td>
+                            <td class="ais"><label for="f4coment">Коментарій:</label></td>
                             <td>
-                                <div><textarea class="row" name="email" rows="6" maxlength="30"
+                                <div><textarea id="f4coment" class="row enter" name="email" rows="6" maxlength="30"
                                         placeholder="Введіть текст повідомлення"></textarea></div>
                             </td>
                         </tr>
@@ -165,51 +170,55 @@
                     <tbody>
                         <tr>
                             <td class="column3">
-                                <p><label>Прізвище та ім’я</label><input class="row" type="text" name="surname_name"
-                                        placeholder="Василь Вірастюк"></p>
+                                <label for="f5name">Прізвище та ім’я</label>
+                                <input id="f5name" class="row enter" type="text" name="surname_name">
                             </td>
                             <td class="column3">
-                                <p><label>Ел. пошта</label><input class="row" type="text" name="email"></p>
+                                <label for="f5email">Ел. пошта</label>
+                                <input id="f5email" class="row enter" type="email" name="email">
                             </td>
                             <td class="column3">
-                                <p><label>Телефон</label><input class="row" type="text" name="phone"></p>
+                                <label for="f5tel">Телефон</label>
+                                <input id="f5tel" class="row enter" type="tel" name="phone">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p>
-                                    <label for="select3" class="select">Країна</label>
-                                    <select id="select3" class="row" name="town">
-                                        <option value="Індонезія">Індонезія</option>
-                                        <option value="Нова Зеландія">Нова Зеландія</option>
-                                        <option value="Австралія">Австралія</option>
-                                    </select>
-                                </p>
+                                <label for="f5select" class="select">Країна</label>
+                                <select id="f5select" class="row enter" name="town">
+                                    <option value="Індонезія">Індонезія</option>
+                                    <option value="Нова Зеландія">Нова Зеландія</option>
+                                    <option value="Австралія">Австралія</option>
+                                </select>
                             </td>
                             <td colspan="2">
-                                <p><label>Адреса</label><input class="row" type="text" name="adress"></p>
+                                <label for="f5adress">Адреса</label>
+                                <input id="f5adress" class="row enter" type="text" name="adress">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <p><label>Місто</label><input class="row" type="text" name="town"></p>
+                                <label for="f5town">Місто</label>
+                                <input id="f5town" class="row enter" type="text" name="town">
                             </td>
                             <td>
-                                <p><label>Будинок</label><input class="row" type="text" name="house"></p>
+                                <label for="f5house">Будинок</label>
+                                <input id="f5house" class="row enter" type="text" name="house">
                             </td>
                             <td>
-                                <p><label>Поштовий індекс</label><input class="row" type="text" name="zip"></p>
+                                <label for="f5zip">Поштовий індекс</label>
+                                <input id="f5zip" class="row enter" type="text" name="zip">
                             </td>
                         </tr>
                     </tbody>
                 </table>
                 <p><input id="cond2-1" type="checkbox" name="condition" value="agree">
                     <label for="cond2-1">Я погоджуюсь з правилами оплати та доставки товару</label></p>
-                    <hr>
-                    <div class="flex-between">
-                        <p><a href="#" class="cta">Повернутися назад</a></p>
-                        <p><input class="row" name="Buy" type="submit" value="Оформити покупку"></p>
-                    </div>
+                <hr>
+                <div class="flex-between">
+                    <p><input class="row" name="Buy" type="reset" value="Повернутися назад"></p>
+                    <p><input class="row" name="Buy" type="submit" value="Оформити покупку"></p>
+                </div>
             </form>
         </div>
         <div class="form form-6">
@@ -217,14 +226,15 @@
             <form action="" method="post">
                 <p>
                     <label for="login">Логін</label>
-                    <input class="row row-2" id="login" type="text" name="login">
+                    <input class="row row-2 enter" id="login" type="text" name="login">
                 </p>
                 <p>
                     <label for="password">Пароль</label>
-                    <input class="row row-2" id="password" type="text" name="password">
+                    <input class="row row-2 enter" id="password" type="password" name="password">
                 </p>
                 <p><a href="#">Забули пароль?</a></p>
-                <p><input id="remember" type="checkbox" name="remember"><label class="remember" for="remember">Запам’ятати пароль</label></p>
+                <p><input id="remember" type="checkbox" name="remember"><label class="remember"
+                        for="remember">Запам’ятати пароль</label></p>
                 <p><input class="row row-2" name="enter" type="submit" value="Увійти"></p>
             </form>
         </div>

@@ -87,8 +87,8 @@ select {
 
 label,
 input,
-textarea,
-option {
+select,
+textarea {
     color: #1f222c;
     font-weight: 400;
     font-size: 14px;
@@ -107,6 +107,12 @@ textarea {
     max-height: 400px;
 }
 
+.enter:focus,
+.enter:hover {
+    border: 1px solid #3e6aff;
+    box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
+}
+
 [type="submit"] {
     color: #fff;
     font-weight: 700;
@@ -117,34 +123,10 @@ textarea {
     border: none;
 }
 
-[type="text"]:focus,
-textarea:focus,
-select:focus,
-[type="text"]:hover,
-textarea:hover,
-select:hover {
-    border: 1px solid #3e6aff;
-    box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
-}
-
 [type="submit"]:hover {
     box-shadow: 0px 2px 2.5px rgba(8, 118, 52, 0.35);
     background-color: #07be51;
-}
-
-[for="file-1"]:hover {
-    box-shadow: 0px 2px 2.5px rgba(15, 40, 126, 0.35);
-    background-color: #2857f4;
-}
-
-.cta:hover {
-    color: #fff;
-    background-color: #85868d;
-}
-
-.form-3 [type="radio"]:checked, 
-.form-3 .sex label:hover {
-    color: #3e6aff;
+    cursor: url(../img/cursor-pointer.png), auto;
 }
 
 .form-2 label,
@@ -211,40 +193,45 @@ h3 {
     font-family: "Roboto";
 }
 
-.sex-img,
-.task-img {
+/* .task-ico, */
+.sex-ico {
     position: absolute;
     appearance: none;
     -webkit-appearance: none;
 }
 
-.sex-img+label {
+/* .sex-ico+label {
     position: relative;
-    padding: 30px 65px;
+    padding: 30px 80px;
 }
 
-.sex-img+label:before,
-.sex-img+label:after {
+.sex-ico+label:before,
+.sex-ico+label:after {
     content: "";
     position: absolute;
 }
 
-.sex-img+label:before {
+.sex-ico+label:before {
     top: -3px;
-    left: -14px;
+    left: -9px;
     width: 70px;
     height: 70px;
     background-color: #e8e8e8;
     border: 2px solid #fff;
+    border-radius: 50%;
 }
 
-.sex-img:checked+label:before {
+.sex-ico:checked+label:before {
     border-color: #3e6aff;
 }
 
+.sex-ico+label:after {
+    border-radius: 0 0 25% 25%;
+}
+
 .sex-male+label:after {
-    top: 5px;
-    left: 0;
+    top: 7px;
+    left: 6px;
     width: 43px;
     height: 62px;
     background: url(../img/male-off.png) no-repeat;
@@ -256,8 +243,8 @@ h3 {
 }
 
 .sex-female+label:after {
-    top: 5px;
-    left: 0;
+    top: 3px;
+    left: 7px;
     width: 41px;
     height: 66px;
     background: url(../img/female-off.png) no-repeat;
@@ -266,6 +253,45 @@ h3 {
 
 .sex-female:checked+label:after {
     background: url(../img/female-on.png) no-repeat;
+} */
+
+.sex-ico+label {
+    position: relative;
+    padding: 30px 80px;
+}
+
+.sex-ico+label:before {
+    content: "";
+    position: absolute;
+}
+
+.sex-ico+label:before {
+    top: 3px;
+    left: -11px;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+}
+
+.sex-male+label:before {
+    background: url(../img/emale-off.png) no-repeat;
+}
+
+.sex-male:checked+label:before {
+    background: url(../img/emale-on.png) no-repeat;
+}
+
+.sex-female+label:before {
+    background: url(../img/efemale-off.png) no-repeat;
+}
+
+.sex-female:checked+label:before {
+    background: url(../img/efemale-on.png) no-repeat;
+}
+
+.sex-ico:checked+label,
+.sex-ico+label:hover {
+    color: #3e6aff;
 }
 
 .form-4 {
@@ -316,9 +342,18 @@ table {
     border-radius: 3px;
 }
 
+[for="file-1"]:hover {
+    box-shadow: 0px 2px 2.5px rgba(15, 40, 126, 0.35);
+    background-color: #2857f4;
+}
+
 .ais {
     display: flex;
     align-items: start;
+}
+
+.ais label {
+    margin: 13px 0;
 }
 
 .form-5 {
@@ -353,7 +388,7 @@ table {
     color: #1f222c;
 }
 
-.cta {
+[type="reset"] {
     display: block;
     padding: 13px 25px;
     color: #6e6f77;
@@ -362,8 +397,14 @@ table {
     font-family: "Roboto";
     text-align: center;
     text-decoration: none;
+    background-color: #fff;
     border: 1px solid #85868d;
     border-radius: 3px;
+}
+
+[type="reset"]:hover {
+    color: #fff;
+    background-color: #85868d;
 }
 
 .form-6 {
