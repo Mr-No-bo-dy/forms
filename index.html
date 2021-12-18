@@ -30,8 +30,8 @@
                     </select>
                 </label>
             </p>
-            <div><textarea class="row enter" name="email" rows="6" maxlength="30" placeholder="Коментарій"></textarea>
-            </div>
+            <p><textarea class="row enter" name="email" rows="6" maxlength="30" placeholder="Коментарій"></textarea>
+            </p>
             <p><input class="row" name="register" type="submit" value="Зареєструватися"></p>
         </form>
         <hr>
@@ -39,38 +39,39 @@
             <h2>02. елементи</h2>
             <div class="flex-between">
                 <div>
-                    <p><input id="deliv1" class="radio" type="radio" name="delivery" value="Нова Пошта" checked>
+                    <p class="mb14"><input id="deliv1" class="radio" type="radio" name="delivery" value="Нова Пошта"
+                            checked>
                         <label for="deliv1">Нова Пошта</label></p>
-                    <p><input id="deliv2" class="radio" type="radio" name="delivery" value="Кур’єр">
+                    <p class="mb14"><input id="deliv2" class="radio" type="radio" name="delivery" value="Кур’єр">
                         <label for="deliv2">Кур’єр</label></p>
-                    <p><input id="deliv3" class="radio" type="radio" name="delivery" value="Самовивіз" disabled>
+                    <p class="mb14"><input id="deliv3" class="radio" type="radio" name="delivery" value="Самовивіз"
+                            disabled>
                         <label for="deliv3">Самовивіз</label></p>
                 </div>
                 <div>
-                    <p><input id="cond1" class="check" type="checkbox" name="conditions" value="agree">
+                    <p class="mb14"><input id="cond1" class="check" type="checkbox" name="conditions" value="agree">
                         <label for="cond1">Прочитав умови договору</label></p>
-                    <p><input id="cond2" class="check" type="checkbox" name="tax" value="agree">
+                    <p class="mb14"><input id="cond2" class="check" type="checkbox" name="tax" value="agree">
                         <label for="cond2">Згідний з ПДВ 9%</label></p>
-                    <p><input id="cond3" class="check" type="checkbox" name="get-news" value="agree" disabled>
+                    <p class="mb14"><input id="cond3" class="check" type="checkbox" name="get-news" value="agree"
+                            disabled>
                         <label for="cond3">Отримувати новини на ел. пошту</label></p>
                 </div>
-                <div>
-                    <fieldset>
-                        <div>
-                            <p>Статус</p>
-                            <input id="sell1" class="check" type="checkbox" name="new" value="agree">
-                            <label for="sell1">Новинки</label>
-                            <input id="sell2" class="check" type="checkbox" name="special" value="agree">
-                            <label for="sell2">Акційні товари</label>
-                            <input id="sell3" class="check" type="checkbox" name="sellout" value="agree">
-                            <label for="sell3">Розпродаж</label>
-                        </div>
-                        <div>
-                            <p>Дата</p>
-                            <input type="date" value="2018-03-17">
-                        </div>
-                    </fieldset>
-                </div>
+                <fieldset>
+                    <div>
+                        <p>Статус</p>
+                        <input id="sell1" class="check" type="checkbox" name="new" value="agree">
+                        <label for="sell1">Новинки</label>
+                        <input id="sell2" class="check" type="checkbox" name="special" value="agree">
+                        <label for="sell2">Акційні товари</label>
+                        <input id="sell3" class="check" type="checkbox" name="sellout" value="agree">
+                        <label for="sell3">Розпродаж</label>
+                    </div>
+                    <div>
+                        <p>Дата</p>
+                        <input type="date" value="2018-03-17">
+                    </div>
+                </fieldset>
             </div>
         </form>
         <hr>
@@ -114,12 +115,12 @@
                     <tr>
                         <td><label for="select2">Місто:</label></td>
                         <td><label class="sel">
-                            <select id="select2" class="row enter" name="town">
+                                <select id="select2" class="row enter" name="town">
                                     <option value="Хмельницький">Хмельницький</option>
                                     <option value="Львів">Львів</option>
                                     <option value="Київ">Київ</option>
                                 </select>
-                        </label>
+                            </label>
                         </td>
                     </tr>
                     <tr>
@@ -143,7 +144,7 @@
                             <input id="file1" type="file" name="choose-file"></td>
                     </tr>
                     <tr>
-                        <td class="ais"><label for="f4coment">Коментарій:</label></td>
+                        <td class="flex"><label for="f4coment">Коментарій:</label></td>
                         <td>
                             <div><textarea id="f4coment" class="row enter" name="email" rows="6" maxlength="30"
                                     placeholder="Введіть текст повідомлення"></textarea></div>
