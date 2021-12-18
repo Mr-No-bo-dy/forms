@@ -374,6 +374,7 @@ table {
     text-align: center;
     background-color: #3e6aff;
     border-radius: 3px;
+    cursor: url(../img/cursor-pointer.png), auto;
 }
 
 .file:hover {
@@ -451,8 +452,23 @@ table {
     right: 15%;
 }
 
+.f6xl {
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    color: #b3b3b3;
+    font: 400 3.0em Arial;
+    transform: rotate(45deg);
+}
+
+.f6x:checked~.form-6,
+.f6x:checked,
+.f6x:checked~h2 {
+    display: none;
+}
+
 .form-6 {
-    padding: 20px 25px;
+    padding: 15px 25px;
     max-width: 310px;
     background-color: #fafafa;
     border: 1px solid #e6e6e6;
