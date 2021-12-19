@@ -139,7 +139,7 @@ textarea {
 [type="reset"],
 [type="file"]+label,
 .f6xl {
-    cursor: url(../img/cursor-pointer.png), auto;
+    cursor: url(../img/cursor-pointer.cur), auto;
 }
 
 .form-2 .flex-between {
