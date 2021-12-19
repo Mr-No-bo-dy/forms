@@ -60,12 +60,6 @@ hr {
     border-radius: 3px;
 }
 
-[type="date"] {
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
 form p {
     margin: 10px 0;
 }
@@ -139,6 +133,12 @@ textarea {
 [type="submit"]:hover {
     box-shadow: 0px 2px 2.5px rgba(8, 118, 52, 0.35);
     background-color: #07be51;
+}
+
+[type="submit"],
+[type="reset"],
+[type="file"]+label,
+.f6xl {
     cursor: url(../img/cursor-pointer.png), auto;
 }
 
@@ -242,6 +242,12 @@ fieldset label:not(:last-child) {
     border-color: #e5e5e5;
 }
 
+[type="date"] {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
 .form-3 {
     max-width: 680px;
 }
@@ -264,6 +270,7 @@ fieldset label:not(:last-child) {
 .task-ico+label:after {
     content: "";
     position: absolute;
+    transition: all .5s ease;
 }
 
 .sex-ico+label:before {
@@ -374,7 +381,6 @@ table {
     text-align: center;
     background-color: #3e6aff;
     border-radius: 3px;
-    cursor: url(../img/cursor-pointer.png), auto;
 }
 
 .file:hover {
@@ -462,9 +468,22 @@ table {
 }
 
 .f6x:checked~.form-6,
-.f6x:checked,
-.f6x:checked~h2 {
+.f6x:checked {
     display: none;
+}
+
+.f6x:checked+label {
+    transform: rotate(0deg);
+    /* transition: all .3s ease; */
+}
+
+.f6x:checked~h2 {
+    position: absolute;
+    min-width: 240px;
+    top: 200px;
+    left: -140px;
+    transform: rotate(-90deg);
+    /* transition: all 1s ease; */
 }
 
 .form-6 {
