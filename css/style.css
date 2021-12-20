@@ -138,7 +138,7 @@ textarea {
 [type="submit"],
 [type="reset"],
 [type="file"]+label,
-.f6xl {
+.f6xlabel {
     cursor: url(../img/cursor-pointer.cur), auto;
 }
 
@@ -458,12 +458,12 @@ table {
     right: 15%;
 }
 
-.f6xl {
+.f6xlabel {
     position: absolute;
     top: 55px;
     right: 10px;
     color: #b3b3b3;
-    font: 400 3.0em Arial;
+    font: 400 3.0rem Arial;
     transform: rotate(45deg);
 }
 
