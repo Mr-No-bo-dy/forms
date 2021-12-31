@@ -510,7 +510,7 @@ table {
     min-width: 260px;
 }
 
-.row-3 {
+.row-3:not([type="submit"]) {
     padding: 9px 15px;
 }
 
