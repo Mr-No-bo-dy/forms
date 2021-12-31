@@ -247,7 +247,7 @@ fieldset label:not(:last-child) {
     border: 1px solid #ccc;
     border-radius: 3px;
     position: relative;
-    background: url(../img/calendar.png) no-repeat right 18px top 10px;
+    background: #fff url(../img/calendar.png) no-repeat right 18px top 10px;
 }
 
 ::-webkit-calendar-picker-indicator {
