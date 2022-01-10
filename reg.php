@@ -8,8 +8,7 @@ $comment = $_POST["comment"];
 $text = '
     <h3>User = "'.$name.'"<br></h3>
     Email = "'.$email.'"<br>
-    Town = "'.$town.'"<br>
-    <br>
+    Town = "'.$town.'"<br><br>
     <i>Comment = "'.$comment.'"</i>
 ';
 
