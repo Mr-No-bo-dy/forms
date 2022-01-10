@@ -6,7 +6,7 @@ $town = $_POST["town"];
 $comment = $_POST["comment"];
 
 $text = '
-    <h3>User = "'.$name.'"<br></h3>
+    <h3>User = "'.$name.'"</h3><br>
     Email = "'.$email.'"<br>
     Town = "'.$town.'"<br><br>
     <i>Comment = "'.$comment.'"</i>
